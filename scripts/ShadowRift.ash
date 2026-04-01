@@ -1102,6 +1102,11 @@ void collect_reward(ShadowRift rift, int lodestones)
 
 void main(string parameters)
 {
+    if (today_to_string().ends_with("0401")) {
+	print("This script does not work on April Fool's day.");
+	exit;
+    }
+
     // Check initial configuration
     validate_configuration();
 
